@@ -1,0 +1,13 @@
+<odoo>
+    <template id="report_dynamic_contact_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <div class="page">
+                    <h2>Reporte de Cliente</h2>
+                    <p><strong>Nombre:</strong> <span t-esc="doc.partner_id.name"/></p>
+                    <p><strong>Datos Seleccionados:</strong> <span t-esc="doc.field_data"/></p>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

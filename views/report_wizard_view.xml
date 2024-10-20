@@ -1,0 +1,20 @@
+<odoo>
+    <record id="view_contact_dynamic_report_wizard" model="ir.ui.view">
+        <field name="name">contact.dynamic.report.wizard.form</field>
+        <field name="model">contact.dynamic.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Generar Reporte Dinámico">
+                <group>
+                    <field name="partner_ids" widget="many2many_tags"/>
+                    <field name="field_ids" widget="many2many_tags"/>
+                </group>
+                <footer>
+                    <button string="Generar Reporte" type="object" 
+                            name="generate_report" class="btn-primary"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

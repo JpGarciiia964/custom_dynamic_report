@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_contact_dynamic_report_tree" model="ir.ui.view">
+        <field name="name">contact.dynamic.report.tree</field>
+        <field name="model">contact.dynamic.report</field>
+        <field name="arch" type="xml">
+            <tree string="Vista Previa del Reporte">
+                <field name="partner_id"/>
+                <field name="field_data"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

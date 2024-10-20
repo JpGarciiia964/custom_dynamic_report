@@ -1,0 +1,16 @@
+<odoo>
+    <!-- Definición de la acción para abrir el wizard -->
+    <record id="action_dynamic_report_wizard" model="ir.actions.act_window">
+        <field name="name">Crear Reporte Dinámico</field>
+        <field name="res_model">contact.dynamic.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- Definición del menú para acceder al wizard desde Contactos -->
+    <menuitem id="menu_dynamic_report_root"
+              name="Dynamic Report"
+              parent="contacts.menu_contacts"
+              sequence="50"
+              action="action_dynamic_report_wizard"/>
+</odoo>
